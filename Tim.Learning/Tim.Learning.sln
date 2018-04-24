@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyControl", "Concu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionDataExportToExcel", "MillionDataExportToExcel\MillionDataExportToExcel.csproj", "{02219BF2-8AA7-401F-9CF8-FC2AD5059E9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetDemo", "Log4NetDemo\Log4NetDemo.csproj", "{817A00BF-12C8-4A7D-84D7-A415769D8C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{02219BF2-8AA7-401F-9CF8-FC2AD5059E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02219BF2-8AA7-401F-9CF8-FC2AD5059E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02219BF2-8AA7-401F-9CF8-FC2AD5059E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817A00BF-12C8-4A7D-84D7-A415769D8C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817A00BF-12C8-4A7D-84D7-A415769D8C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817A00BF-12C8-4A7D-84D7-A415769D8C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817A00BF-12C8-4A7D-84D7-A415769D8C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
