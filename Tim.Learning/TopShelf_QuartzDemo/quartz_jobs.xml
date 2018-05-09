@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains job definitions in schema version 2.0 format -->
+
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+
+  <schedule>
+    <job>
+      <name>TestJob</name>
+      <group>Group1</group>
+      <description>测试任务1</description>
+      <job-type>TopShelf_QuartzDemo.TestJob,TopShelf_QuartzDemo</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>Job1Trigger</name>
+        <group>Group1Tigger</group>
+        <job-name>TestJob</job-name>
+        <job-group>Group1</job-group>
+        <start-time>2015-01-22T00:00:00+08:00</start-time>
+        <cron-expression>0/3 * * * * ? *</cron-expression>
+      </cron>
+    </trigger>
+  </schedule>
+</job-scheduling-data>
