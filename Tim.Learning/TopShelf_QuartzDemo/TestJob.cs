@@ -23,13 +23,13 @@ namespace TopShelf_QuartzDemo
         private readonly ILog _log = LogManager.GetLogger(typeof(TestJob));
         public void Execute(IJobExecutionContext context)
         {
-            lock(lck)
-            {
+            //lock(lck)
+            //{
                 _log.InfoFormat("Begin-" + Thread.CurrentThread.Name);
                 _log.InfoFormat("TestJob Execute-" + Thread.CurrentThread.Name);
                 Thread.CurrentThread.Join(5000);
                 _log.InfoFormat("End-" + Thread.CurrentThread.Name);
-            }
+            //}
         }
     }
 }

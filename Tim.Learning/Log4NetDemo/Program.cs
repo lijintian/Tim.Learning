@@ -12,7 +12,7 @@ namespace Log4NetDemo
     {
         static void Main(string[] args)
         {
-            ILog log = log4net.LogManager.GetLogger("SmtpLogger");
+            ILog log = log4net.LogManager.GetLogger(typeof(Program));
 
             for (var i = 0; i < 1; i++)
             {

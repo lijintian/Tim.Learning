@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionScopTest", "Tran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopShelf_QuartzDemo", "TopShelf_QuartzDemo\TopShelf_QuartzDemo.csproj", "{F236D2FC-1308-41C1-847E-3638CFC8D78B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionDemo", "ConsoleApplication1\RecursionDemo.csproj", "{721D18D3-ED67-4BA5-86C9-85EA0A9F0416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F236D2FC-1308-41C1-847E-3638CFC8D78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F236D2FC-1308-41C1-847E-3638CFC8D78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F236D2FC-1308-41C1-847E-3638CFC8D78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721D18D3-ED67-4BA5-86C9-85EA0A9F0416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721D18D3-ED67-4BA5-86C9-85EA0A9F0416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721D18D3-ED67-4BA5-86C9-85EA0A9F0416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721D18D3-ED67-4BA5-86C9-85EA0A9F0416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
