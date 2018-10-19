@@ -69,6 +69,11 @@ namespace EFCodeFirstDemo
 
     public class BloggingContext : DbContext
     {
+        public BloggingContext() : base("EfCodeFirst")
+        {
+
+        }
+
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
     }
