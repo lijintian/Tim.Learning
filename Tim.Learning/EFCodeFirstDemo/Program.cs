@@ -45,6 +45,8 @@ namespace EFCodeFirstDemo
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
+        
+        public string Url { get; set; }
         /// <summary>
         ///Virtual Navigation Properties,Enable Lazy Loading 
         /// 虚拟导航属性，允许懒加载
