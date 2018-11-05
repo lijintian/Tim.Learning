@@ -41,6 +41,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HousePrice", "HousePrice\Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCodeFirstWithExistDb", "EfCodeFirstWithExistDb\EfCodeFirstWithExistDb.csproj", "{1167DC0E-25BC-43F3-A359-C5239569FAE6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TranslateDoc", "TranslateDoc", "{4EB20D26-5BC3-4328-9F05-15942D18C9DD}"
+	ProjectSection(SolutionItems) = preProject
+		F:\Mission\EF-Translated.docx = F:\Mission\EF-Translated.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
