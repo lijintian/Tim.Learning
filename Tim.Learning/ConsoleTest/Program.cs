@@ -16,11 +16,7 @@ namespace ConsoleTest
             //LamdaSearch();
             //HashSearch();
 
-            var testObj = new T1();
-
-            UnicodeHelper.ConvertObjUnicodeField(testObj);
-
-            
+            Console.WriteLine("34244".ToString().PadLeft(8, '0'));
             Console.ReadKey();
         }
 
