@@ -16,7 +16,12 @@ namespace ConsoleTest
             //LamdaSearch();
             //HashSearch();
 
-            Console.WriteLine("34244".ToString().PadLeft(8, '0'));
+            UploadFileToIntranet upfi = new UploadFileToIntranet();
+
+            upfi.UploadECCInvoice_Intranet("");
+
+            //Console.WriteLine(money.GetDecimalValue());
+            //Console.WriteLine(money.GetDecimalValueInShowPrecision());
             Console.ReadKey();
         }
 
