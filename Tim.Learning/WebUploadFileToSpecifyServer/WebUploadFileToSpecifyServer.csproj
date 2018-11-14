@@ -183,6 +183,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PostFileToSpecialMachineController.cs" />
     <Compile Include="Controllers\SpecifyUploadFileController.cs" />
     <Compile Include="Controllers\UploadToIntranetMachineController.cs" />
     <Compile Include="Global.asax.cs">

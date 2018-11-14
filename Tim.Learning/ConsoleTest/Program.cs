@@ -16,9 +16,17 @@ namespace ConsoleTest
             //LamdaSearch();
             //HashSearch();
 
-            UploadFileToIntranet upfi = new UploadFileToIntranet();
+            #region 在共享文件夹上传下载文件
+            /*UploadFileToIntranet upfi = new UploadFileToIntranet();
+            upfi.UploadECCInvoice_Intranet("");*/
+            #endregion
 
-            upfi.UploadECCInvoice_Intranet("");
+            #region 在FTP服务器上传下载文件
+            var ftpHelper = new FTPHelper("10.0.1.10","FtpUser","123qwe", "10.0.1.10");
+
+            ftpHelper.DownloadFile(@"F:\Download\Ftp", @"\Csharp", @"c3.doc");
+
+            #endregion
 
             //Console.WriteLine(money.GetDecimalValue());
             //Console.WriteLine(money.GetDecimalValueInShowPrecision());
