@@ -719,5 +719,87 @@ namespace MillionDataExportToExcel
 
         }
 
+
+        /// <summary>
+        /// 分部导出
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="heads"></param>
+        /// <param name="partSize">每部分行数</param>
+        public void ExportCsvContentPart(List<List<string[]>> list, List<string[]> heads,int partSize=200000)
+        {
+
+            string simpleFileFolder = System.IO.Path.Combine(System.Environment.CurrentDirectory, "SimpleFile");
+
+            string zipFileFolder = System.IO.Path.Combine(System.Environment.CurrentDirectory, "ZipFile");
+
+            string currentSimpleFileFolderCache= System.IO.Path.Combine(System.Environment.CurrentDirectory, "SimpleFileCache"+DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+            if (!Directory.Exists(simpleFileFolder))
+            {
+                Directory.CreateDirectory(simpleFileFolder);
+            }
+
+            if (!Directory.Exists(zipFileFolder))
+            {
+                Directory.CreateDirectory(zipFileFolder);
+            }
+
+            if (!Directory.Exists(currentSimpleFileFolderCache))
+            {
+                Directory.CreateDirectory(currentSimpleFileFolderCache);
+            }
+
+            var partPageCount  = list.Count / partSize+1;
+
+            for (var page = 0; page < partPageCount; page++)
+            {
+                var pageData = list.Skip(page * partSize).Take(partSize);
+
+
+            }
+
+
+
+        }
+
+
+        public string ExportCsvContentToFolder(List<List<string[]>> list, List<string[]> heads,string folder,int partPage)
+        {
+            string filePath = folder + string.Format("\\Test_{0}.csv", partPage);
+
+            for (var i = 0; i < heads.Count(); i++)
+            {
+                string sheetName = string.Empty;
+
+                
+                using (StreamWriter write = new StreamWriter(filePath, false, System.Text.Encoding.Default))
+                {
+                    //写列头
+                    write.WriteLine(string.Join(",", heads[i]));
+
+                    //写内容
+                    if (list.Count > 0)
+                    {
+                        for (var j = 0; j < list[i].Count(); j++)
+                        {
+                            for (var k = 0; k < list[i][j].Count(); k++)
+                            {
+                                if (!string.IsNullOrEmpty(list[i][j][k]))
+                                {
+                                    list[i][j][k] = list[i][j][k].ToString().Replace(",", "，");
+                                }
+                            }
+
+                            write.WriteLine(string.Join(",", list[i][j]));
+                        }
+                    }
+                    write.Flush();
+                    write.Close();
+                }
+            }
+
+            return filePath;
+        }
     }
 }

@@ -89,5 +89,10 @@ namespace HousePrice
         {
 
         }
+
+        private void txtSellUnitPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

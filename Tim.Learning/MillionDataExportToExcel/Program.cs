@@ -19,7 +19,7 @@ namespace MillionDataExportToExcel
 
             List<string[]> contents = new List<string[]>();
 
-            for (var i = 0; i < 300000; i++)
+            for (var i = 0; i < 1000000; i++)
             {
                 contents.Add(new string[] {
                     "Content1-"+i,

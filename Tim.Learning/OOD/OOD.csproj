@@ -43,6 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Decorator.cs" />
+    <Compile Include="Pipeline\BasicValve.cs" />
+    <Compile Include="Pipeline\FirstValve.cs" />
+    <Compile Include="Pipeline\IPipeLine.cs" />
+    <Compile Include="Pipeline\AbstractValve.cs" />
+    <Compile Include="Pipeline\SecondValve.cs" />
+    <Compile Include="Pipeline\StandardPipeLine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
